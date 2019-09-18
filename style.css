@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: sans-serif;
+}
+
+a{
+    color: #000000;
+    font-size: 1.2rem;
+}
+
+#Grid-Wrapper {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#canvas {
+    margin: 0;
+    padding: 0;
+}
+
+.menu{
+    padding: 1rem;
+    width: 20rem;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 10;
+    position: fixed;
+    right: 20px;
+    top: 2rem;
+    border-radius: 1rem;
+}
+
+.container {
+  width: 100%;
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
+}
+
+.container button {
+  width: 100%;
+  display: block;
+  font-size: 1rem;
+}
+
+.hint {
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 1rem;
+}
+
+.hint a {
+    color: white;
+    padding: 0.2rem;
+    display: block;
+    font-size: 1rem;
+}

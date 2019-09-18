@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>A* Pathfinding</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body onkeydown="Shift(event)" onkeyup="Shift(event)" onclick="mouseclick(event)" onmousemove="mouse_position(event)">
+      <!-- need to be defined first -->
+      <script src="js/Node.js"></script>
+      <script src="js/Grid.js"></script>
+      <script src="js/Menu.js"></script>
+
+      <!-- GUI -->
+      <div id="Grid-Wrapper">
+          <canvas width="1920" height="1080 " id="canvas">Your browser does not support the HTML5 canvas tag.</canvas >
+      </div>
+      <div class="menu">
+          <div class="container"><a>Only supported on 1920x1080</a></div>
+          <div class="container"><a id="mouseCord"></a></div>
+          <div class="container"><div class="container hint">
+              <a>Left mouse button to build barrier</a>
+              <a>Hold shift to remove barrier</a>
+          </div></div>
+          <div class="container"><a id="msg">Ready</a></div>
+          <input id="CheckSlow" onchange="swapDelay()" type="checkbox"> Slow motion </input>
+          <div></div>
+          <div class="container"><button  id="RefreshGridBtn" onclick="RefreshGrid()">Clear canvas</button><button  id="findpathbtn" onclick="FindPath()">Find Path</button></div>
+      </div>
+
+      <!-- can be defined later -->
+      <script src="js/Heap.js"></script>
+      <script src="js/pathfinder.js"></script>
+  </body>
+</html>
