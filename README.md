@@ -2,5 +2,5 @@
 Small Pathfinding project im working on in javascript.
 
 
-Probelems:
+Problems:
   * not scalable (can only support one resolution)
